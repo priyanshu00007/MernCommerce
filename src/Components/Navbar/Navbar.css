@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.Navbar
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px;
+}
+.navlogo
+{
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+.navlogo p
+{
+    color:#171717;
+    font-size: 38px;
+    font-weight: 600;
+}
+.nav_menu
+{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap:50px;
+    color:#626262;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav_menu li
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:3px;
+    cursor: pointer;
+}
+.nav_menu hr
+{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #ff4141;
+}
+.nav-login-cart
+{
+    display: flex;
+    align-items: center;
+    gap:45px;
+    
+}
+.button {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #252525;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #333;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-txt {
+    z-index: 1;
+    font-weight: 800;
+    letter-spacing: 4px;
+  }
+  
+  .type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #333;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  
+  .button:hover {
+    box-shadow: 1px 1px 200px #252525;
+    color: #fff;
+    border: none;
+  }
+  
+  .type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+  
+.nav_cart_count 
+{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background-color: red;
+    color:white;
+}
+/* Navbar.css */
+
+.nav_menu li {
+    list-style-type: none;
+  }
+  
+  .nav_menu li a {
+    text-decoration: none;
+    color: inherit; /* This ensures the link inherits the color of the parent element */
+  }
+  
+  
